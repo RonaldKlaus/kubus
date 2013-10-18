@@ -1,0 +1,25 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: employee_1
+  password:
+
+development:
+  <<: *defaults
+  database: kubus_app_development
+
+test:
+  <<: *defaults
+  database: kubus_app_test
+  min_messages: WARNING
+
+production:
+  <<: *defaults
+  database: kubus_app_production
+
+staging:
+  <<: *defaults
+  database: kubus_app_development
