@@ -1,0 +1,2 @@
+module AttributeLanguagesHelper
+end

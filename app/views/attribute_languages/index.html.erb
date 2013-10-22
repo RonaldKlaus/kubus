@@ -1,0 +1,31 @@
+<h1>Listing attribute_languages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @attribute_languages.each do |attribute_language| %>
+      <tr>
+        <td><%= attribute_language.name %></td>
+        <td><%= attribute_language.description %></td>
+        <td><%= attribute_language.language_id %></td>
+        <td><%= link_to 'Show', attribute_language %></td>
+        <td><%= link_to 'Edit', edit_attribute_language_path(attribute_language) %></td>
+        <td><%= link_to 'Destroy', attribute_language, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Attribute language', new_attribute_language_path %>
