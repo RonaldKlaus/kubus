@@ -1,0 +1,61 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :course_id %><br>
+    <%= f.number_field :course_id %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :min_number_of_participants %><br>
+    <%= f.number_field :min_number_of_participants %>
+  </div>
+  <div class="field">
+    <%= f.label :max_number_of_participants %><br>
+    <%= f.number_field :max_number_of_participants %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br>
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :attribute %><br>
+    <%= select_tag :attribute, options_for_select(Attribute.all) %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= select_tag :state, options_for_select( State.first.by_language(1).name ) %>
+  </div>
+  <div class="field">
+    <%= f.label :activate_at %><br>
+    <%= f.date_select :activate_at %>
+  </div>
+  <div class="field">
+    <%= f.label :schedule %><br>
+    <%= f.text_area :schedule %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

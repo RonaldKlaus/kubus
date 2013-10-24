@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  course_id: 1
+  price: 1
+  min_number_of_participants: 1
+  max_number_of_participants: MyString
+  language: 
+  url: MyString
+  attribute: 
+  activate_at: 2013-10-18
+  schedule: MyText
+  comment: MyText
+
+two:
+  course_id: 1
+  price: 1
+  min_number_of_participants: 1
+  max_number_of_participants: MyString
+  language: 
+  url: MyString
+  attribute: 
+  activate_at: 2013-10-18
+  schedule: MyText
+  comment: MyText

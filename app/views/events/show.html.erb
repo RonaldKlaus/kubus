@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @event.course_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @event.price %>
+</p>
+
+<p>
+  <strong>Min number of participants:</strong>
+  <%= @event.min_number_of_participants %>
+</p>
+
+<p>
+  <strong>Max number of participants:</strong>
+  <%= @event.max_number_of_participants %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @event.language %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @event.url %>
+</p>
+
+<p>
+  <strong>Attribute:</strong>
+  <%= @event.attribute %>
+</p>
+
+<p>
+  <strong>Activate at:</strong>
+  <%= @event.activate_at %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @event.schedule %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @event.comment %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
