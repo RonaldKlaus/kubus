@@ -11,6 +11,8 @@ KubusApp::Application.routes.draw do
 
   resources :state_languages
 
+  resources :states
+
   resources :registrations
 
   resources :languages
