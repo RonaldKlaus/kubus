@@ -9,6 +9,8 @@ KubusApp::Application.routes.draw do
 
   resources :sciencedomain_languages
 
+  resources :languages
+
   resources :events
 
   resources :courses
