@@ -15,6 +15,8 @@ KubusApp::Application.routes.draw do
 
   resources :events
 
+  resources :sciencedomains
+
   resources :courses
 
   resources :users

@@ -1,0 +1,25 @@
+<h1>Listing sciencedomains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sciencedomains.each do |sciencedomain| %>
+      <tr>
+        <td><%= link_to 'Show', sciencedomain %></td>
+        <td><%= link_to 'Edit', edit_sciencedomain_path(sciencedomain) %></td>
+        <td><%= link_to 'Destroy', sciencedomain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sciencedomain', new_sciencedomain_path %>
