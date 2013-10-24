@@ -1,0 +1,6 @@
+PWD /Users/employee_1/myprojects/rails/kubus-app/db/migrate
+INPUT /usr/local/texlive/2013/texmf.cnf
+INPUT /usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/employee_1/myprojects/rails/kubus-app/db/migrate/20131018113042_create_sciencedomain_langauges.rb
+OUTPUT Output/20131018113042_create_sciencedomain_langauges.log
