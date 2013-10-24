@@ -9,6 +9,8 @@ KubusApp::Application.routes.draw do
 
   resources :sciencedomain_languages
 
+  resources :courses
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
