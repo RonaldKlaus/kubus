@@ -1,0 +1,33 @@
+<h1>Listing state_languages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @state_languages.each do |state_language| %>
+      <tr>
+        <td><%= state_language.state_id %></td>
+        <td><%= state_language.name %></td>
+        <td><%= state_language.description %></td>
+        <td><%= state_language.language_id %></td>
+        <td><%= link_to 'Show', state_language %></td>
+        <td><%= link_to 'Edit', edit_state_language_path(state_language) %></td>
+        <td><%= link_to 'Destroy', state_language, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New State language', new_state_language_path %>
