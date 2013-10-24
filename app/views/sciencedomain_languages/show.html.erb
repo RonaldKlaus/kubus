@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>State:</strong>
+  <%= @sciencedomain_language.state_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sciencedomain_language.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sciencedomain_language.description %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @sciencedomain_language.language_id %>
+</p>
+
+<%= link_to 'Edit', edit_sciencedomain_language_path(@sciencedomain_language) %> |
+<%= link_to 'Back', sciencedomain_languages_path %>

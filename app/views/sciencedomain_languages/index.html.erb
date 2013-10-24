@@ -1,0 +1,33 @@
+<h1>Listing sciencedomain_languages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sciencedomain_languages.each do |sciencedomain_language| %>
+      <tr>
+        <td><%= sciencedomain_language.state_id %></td>
+        <td><%= sciencedomain_language.name %></td>
+        <td><%= sciencedomain_language.description %></td>
+        <td><%= sciencedomain_language.language_id %></td>
+        <td><%= link_to 'Show', sciencedomain_language %></td>
+        <td><%= link_to 'Edit', edit_sciencedomain_language_path(sciencedomain_language) %></td>
+        <td><%= link_to 'Destroy', sciencedomain_language, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sciencedomain language', new_sciencedomain_language_path %>
